@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;   
+    margin: 0;
+}
+
+.bg{
+    background: url(https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg) no-repeat center center/cover ;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur();
+}
+
+.loading{
+    color: #ffff;
+    font-size: 50px;
+}
