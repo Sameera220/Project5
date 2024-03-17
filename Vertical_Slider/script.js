@@ -20,6 +20,14 @@ const changeSlide = (direction) => {
         if (activeSlidIndex > slideLength -1){
             activeSlidIndex=0;
         }
+
+        else if (direction === 'down'){
+            activeSlidIndex--;
+
+        if(activeSlidIndex<0){
+            activeSlidIndex= slideLength-1;
+        }
+        }
     }
 
     rightSlide.style.transform = `translateY(-${activeSlidIndex*sliderHeight}px)`
