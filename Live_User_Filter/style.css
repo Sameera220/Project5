@@ -1,0 +1,88 @@
+*{
+    box-sizing:content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 243, 9);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(44, 41, 41);
+    width: 300px;
+    overflow: hidden;
+    
+}
+
+.title{
+    margin: 0;
+}
+
+.subtitle{
+    display: inline-block;
+    margin: 5px 0px 20px;
+    opacity: 0.8;
+}
+.header{
+    background-color: blue;
+    color: white;
+    padding: 30px 20px;
+}
+
+input {
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 14px;
+    border: none;
+    border-radius: 50px;
+    color: #ffff;
+    padding: 10px 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.user-list{
+    list-style: none;
+    overflow-y: auto;
+    max-height: 400px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 251, 250);
+}
+
+.user-list li{
+    display: flex;
+    padding: 20px;
+
+}
+.user-list img{
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.user-list .user-info{
+    margin-left: 1dvh;
+}
+.user-list .user-info h4{
+    margin: 0 0 10px;
+}
+.user-list .user-info p{
+    font-size: 12px;
+}
+.user-list li:not(:last-of-type){
+    border: 1px solid #eee;
+}
+.user-list li.hide{
+    display: none;
+}
